@@ -1,0 +1,275 @@
+{
+  "frozen_on": "2026-09-06",
+  "dataset": "RCAEval RE2-OB (Online Boutique, 90 failure cases)",
+  "dataset_doi": "10.5281/zenodo.14590730",
+  "metrics": "AC@k / Avg@k per TORAI (FSE'26) section 4.2 Eq. 1",
+  "git_commit": "c14f9f769d274e63778c53c5aa81ea41db08396a",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.0",
+  "experiments": [
+    {
+      "file": "experiment_d.jsonl",
+      "method": "TORAI",
+      "year": "FSE'26",
+      "mechanism": "multi-source severity clustering",
+      "sha256": "26bb6bdbc3254edec2544900ba2e91f05aef3a98f259fc0541dbb7023fc9734a",
+      "bytes": 91066,
+      "summary": {
+        "runs": 90,
+        "cases": 90,
+        "seeds": null,
+        "ok": 90,
+        "failed": 0,
+        "AC@1": 0.7444,
+        "AC@3": 0.9111,
+        "Avg@5": 0.8756,
+        "mean_seconds": 1.858,
+        "per_fault": {
+          "cpu": {
+            "n": 15,
+            "AC@1": 0.8,
+            "AC@3": 1.0,
+            "Avg@5": 0.96
+          },
+          "delay": {
+            "n": 15,
+            "AC@1": 0.6667,
+            "AC@3": 0.8667,
+            "Avg@5": 0.8
+          },
+          "disk": {
+            "n": 15,
+            "AC@1": 0.7333,
+            "AC@3": 0.8,
+            "Avg@5": 0.8
+          },
+          "loss": {
+            "n": 15,
+            "AC@1": 0.7333,
+            "AC@3": 0.8667,
+            "Avg@5": 0.8667
+          },
+          "mem": {
+            "n": 15,
+            "AC@1": 0.6667,
+            "AC@3": 1.0,
+            "Avg@5": 0.8933
+          },
+          "socket": {
+            "n": 15,
+            "AC@1": 0.8667,
+            "AC@3": 0.9333,
+            "Avg@5": 0.9333
+          }
+        },
+        "top1_counts": {
+          "recommendationservice": 20,
+          "emailservice": 19,
+          "currencyservice": 13,
+          "productcatalogservice": 10,
+          "checkoutservice": 9
+        }
+      }
+    },
+    {
+      "file": "experiment_c.jsonl",
+      "method": "CIRCA",
+      "year": "ICSE'22",
+      "mechanism": "causal graph + regression testing",
+      "sha256": "fcdaa3f4c2bf46c1211c47c286682b6b42c16407cf1cbbe68014c19c473384ed",
+      "bytes": 94581,
+      "summary": {
+        "runs": 90,
+        "cases": 90,
+        "seeds": null,
+        "ok": 90,
+        "failed": 0,
+        "AC@1": 0.5778,
+        "AC@3": 0.9667,
+        "Avg@5": 0.88,
+        "mean_seconds": 42.322,
+        "per_fault": {
+          "cpu": {
+            "n": 15,
+            "AC@1": 0.7333,
+            "AC@3": 1.0,
+            "Avg@5": 0.92
+          },
+          "delay": {
+            "n": 15,
+            "AC@1": 0.5333,
+            "AC@3": 0.8667,
+            "Avg@5": 0.8133
+          },
+          "disk": {
+            "n": 15,
+            "AC@1": 0.8,
+            "AC@3": 1.0,
+            "Avg@5": 0.96
+          },
+          "loss": {
+            "n": 15,
+            "AC@1": 0.4,
+            "AC@3": 1.0,
+            "Avg@5": 0.8667
+          },
+          "mem": {
+            "n": 15,
+            "AC@1": 0.4667,
+            "AC@3": 0.9333,
+            "Avg@5": 0.84
+          },
+          "socket": {
+            "n": 15,
+            "AC@1": 0.5333,
+            "AC@3": 1.0,
+            "Avg@5": 0.88
+          }
+        },
+        "top1_counts": {
+          "emailservice": 16,
+          "recommendationservice": 14,
+          "cartservice": 13,
+          "checkoutservice": 12,
+          "shippingservice": 9
+        }
+      }
+    },
+    {
+      "file": "experiment_b.jsonl",
+      "method": "BARO",
+      "year": "FSE'24",
+      "mechanism": "statistical hypothesis testing",
+      "sha256": "009b8d19d9787f9168aef54a5ce8bebacdc2bb02408c4831498b80655db79734",
+      "bytes": 108164,
+      "summary": {
+        "runs": 91,
+        "cases": 91,
+        "seeds": null,
+        "ok": 91,
+        "failed": 0,
+        "AC@1": 0.2308,
+        "AC@3": 0.8132,
+        "Avg@5": 0.7077,
+        "mean_seconds": 0.661,
+        "per_fault": {
+          "cpu": {
+            "n": 16,
+            "AC@1": 0.125,
+            "AC@3": 0.6875,
+            "Avg@5": 0.625
+          },
+          "delay": {
+            "n": 15,
+            "AC@1": 0.0,
+            "AC@3": 0.6667,
+            "Avg@5": 0.5067
+          },
+          "disk": {
+            "n": 15,
+            "AC@1": 0.2667,
+            "AC@3": 0.8667,
+            "Avg@5": 0.7467
+          },
+          "loss": {
+            "n": 15,
+            "AC@1": 0.3333,
+            "AC@3": 0.8667,
+            "Avg@5": 0.7733
+          },
+          "mem": {
+            "n": 15,
+            "AC@1": 0.6,
+            "AC@3": 1.0,
+            "Avg@5": 0.9067
+          },
+          "socket": {
+            "n": 15,
+            "AC@1": 0.0667,
+            "AC@3": 0.8,
+            "Avg@5": 0.6933
+          }
+        },
+        "top1_counts": {
+          "redis": 66,
+          "emailservice": 10,
+          "checkoutservice": 5,
+          "productcatalogservice": 5,
+          "recommendationservice": 3
+        }
+      }
+    },
+    {
+      "file": "experiment_a.jsonl",
+      "method": "Trace-SHAP",
+      "year": "-",
+      "mechanism": "trace anomaly attribution",
+      "sha256": "966a7ca747dcb70a7f28268cd9d235c2eeef8fc127412da9392cb5cbd9ff2a5f",
+      "bytes": 389894,
+      "summary": {
+        "runs": 455,
+        "cases": 91,
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "ok": 455,
+        "failed": 0,
+        "AC@1": 0.0593,
+        "AC@3": 0.6484,
+        "Avg@5": 0.5618,
+        "mean_seconds": 7.387,
+        "per_fault": {
+          "cpu": {
+            "n": 80,
+            "AC@1": 0.05,
+            "AC@3": 0.6625,
+            "Avg@5": 0.5925
+          },
+          "delay": {
+            "n": 75,
+            "AC@1": 0.1067,
+            "AC@3": 0.56,
+            "Avg@5": 0.5493
+          },
+          "disk": {
+            "n": 75,
+            "AC@1": 0.0533,
+            "AC@3": 0.68,
+            "Avg@5": 0.608
+          },
+          "loss": {
+            "n": 75,
+            "AC@1": 0.08,
+            "AC@3": 0.64,
+            "Avg@5": 0.5067
+          },
+          "mem": {
+            "n": 75,
+            "AC@1": 0.0267,
+            "AC@3": 0.6533,
+            "Avg@5": 0.5307
+          },
+          "socket": {
+            "n": 75,
+            "AC@1": 0.04,
+            "AC@3": 0.6933,
+            "Avg@5": 0.5813
+          }
+        },
+        "seed_avg5_min": 0.5121,
+        "seed_avg5_max": 0.6176,
+        "seed_avg5_spread": 0.1055,
+        "top1_counts": {
+          "frontendservice": 412,
+          "checkoutservice": 18,
+          "productcatalogservice": 15,
+          "recommendationservice": 10
+        }
+      }
+    }
+  ]
+}

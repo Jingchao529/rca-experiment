@@ -1,0 +1,29 @@
+method,year,mechanism,fault,n,AC@1,AC@3,Avg@5,mean_seconds
+TORAI,FSE'26,multi-source severity clustering,ALL,90,0.7444,0.9111,0.8756,1.858
+TORAI,FSE'26,multi-source severity clustering,cpu,15,0.8,1.0,0.96,
+TORAI,FSE'26,multi-source severity clustering,delay,15,0.6667,0.8667,0.8,
+TORAI,FSE'26,multi-source severity clustering,disk,15,0.7333,0.8,0.8,
+TORAI,FSE'26,multi-source severity clustering,loss,15,0.7333,0.8667,0.8667,
+TORAI,FSE'26,multi-source severity clustering,mem,15,0.6667,1.0,0.8933,
+TORAI,FSE'26,multi-source severity clustering,socket,15,0.8667,0.9333,0.9333,
+CIRCA,ICSE'22,causal graph + regression testing,ALL,90,0.5778,0.9667,0.88,42.322
+CIRCA,ICSE'22,causal graph + regression testing,cpu,15,0.7333,1.0,0.92,
+CIRCA,ICSE'22,causal graph + regression testing,delay,15,0.5333,0.8667,0.8133,
+CIRCA,ICSE'22,causal graph + regression testing,disk,15,0.8,1.0,0.96,
+CIRCA,ICSE'22,causal graph + regression testing,loss,15,0.4,1.0,0.8667,
+CIRCA,ICSE'22,causal graph + regression testing,mem,15,0.4667,0.9333,0.84,
+CIRCA,ICSE'22,causal graph + regression testing,socket,15,0.5333,1.0,0.88,
+BARO,FSE'24,statistical hypothesis testing,ALL,91,0.2308,0.8132,0.7077,0.661
+BARO,FSE'24,statistical hypothesis testing,cpu,16,0.125,0.6875,0.625,
+BARO,FSE'24,statistical hypothesis testing,delay,15,0.0,0.6667,0.5067,
+BARO,FSE'24,statistical hypothesis testing,disk,15,0.2667,0.8667,0.7467,
+BARO,FSE'24,statistical hypothesis testing,loss,15,0.3333,0.8667,0.7733,
+BARO,FSE'24,statistical hypothesis testing,mem,15,0.6,1.0,0.9067,
+BARO,FSE'24,statistical hypothesis testing,socket,15,0.0667,0.8,0.6933,
+Trace-SHAP,-,trace anomaly attribution,ALL,91,0.0593,0.6484,0.5618,7.387
+Trace-SHAP,-,trace anomaly attribution,cpu,80,0.05,0.6625,0.5925,
+Trace-SHAP,-,trace anomaly attribution,delay,75,0.1067,0.56,0.5493,
+Trace-SHAP,-,trace anomaly attribution,disk,75,0.0533,0.68,0.608,
+Trace-SHAP,-,trace anomaly attribution,loss,75,0.08,0.64,0.5067,
+Trace-SHAP,-,trace anomaly attribution,mem,75,0.0267,0.6533,0.5307,
+Trace-SHAP,-,trace anomaly attribution,socket,75,0.04,0.6933,0.5813,
