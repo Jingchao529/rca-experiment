@@ -1,0 +1,27 @@
+{
+  "model_provider": "openai",
+  "model": "gpt-4o-mini",
+  "base_url": "https://api.openai.com/v1",
+  "token_plan_base_url": "https://api.openai.com/v1",
+  "token_plan_api_key": "",
+  "api_key": "",
+  "gemini_api_key": "",
+  "deepseek_api_key": "",
+  "model_routing_enabled": true,
+  "small_model": "gpt-4o-mini",
+  "large_model": "gpt-4o-mini",
+  "small_model_max_setup_turns": 4,
+  "large_model_trigger_tools": [
+    "run_causal_rca",
+    "read_report",
+    "generate_diagnosis_report",
+    "save_report"
+  ],
+  "max_agent_turns": 24,
+  "max_tool_output_chars": 24000,
+  "default_rca_runs": 3,
+  "temperature": 0.2,
+  "max_tokens": 8000,
+  "report_model": "gpt-4o-mini",
+  "reasoning_headroom": 4000
+}
